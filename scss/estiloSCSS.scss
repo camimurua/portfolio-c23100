@@ -1,0 +1,94 @@
+body{
+    background: #FDD2BF;
+    .section__principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .section__divLeft{
+            text-align: center;
+            width: 50%;
+            font-family: "Montserrat", sans-serif;
+            line-height: 2.5rem;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 45px;
+            .section__divLeft_titulo{
+                line-height: 3rem;
+                font-size: 3.2rem;
+                font-weight: 700;
+            }
+        }
+        .section__divRight{
+            margin-top: 5%;
+        }
+    }
+    .section__resumen{
+        display: flex;
+        flex-direction: row-reverse;
+        .section__divResumen{
+            background-color: #FF5C58;
+            width: 60%;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            border-radius: 0 0 0 15px;
+            .section__divResumen_segundo{
+                background-color: #FE8F8F;
+                padding-left: 25px;
+                padding-bottom: 25px;
+                border-radius: 0 0 0 15px;
+                .section__divResumen_tercero{
+                    background-color: #FCD2D1;
+                    padding: 10%;
+                    border-radius: 0 0 0 15px;
+                    .section__divResumen_titulo{
+                        font-weight: bold;
+                        font-size: 2.2rem;
+                        line-height: 1.3;
+                    }
+                    .section__divResumen_cuerpo{
+                        line-height: 1.8em;
+                        text-align: justify;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+       
+    }
+    .section__portfolio{
+        .section__portfolio_cuerpo{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            margin-left: 5%;
+            .section__portfolio_titulo{
+                font-size: 2.4em;
+            }
+        }
+    }
+    .section__contacto{
+        display: flex;
+        flex-direction: row;
+        .section__contacto_icono {
+            width: 30em;
+            .fa-envelope{
+                font-size: 10em;
+                margin-top: 10%;
+                margin-left: 10%;
+            }
+        }
+        .section__contacto_form{
+            margin-top: 2%;
+            margin-right: 5%;
+            .form-label{
+                color: black;
+                font-family: "Montserrat", sans-serif;
+            }
+        }
+    }
+}
+.body__portfolio{
+    background: url(../img/codigo.jpg);
+}
