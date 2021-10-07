@@ -1,5 +1,16 @@
 body{
     background: #FDD2BF;
+    header{
+        nav{
+            .nav-wrapper{
+                .logo{
+                    color: #fff;
+                    font-size: 2.1rem;
+                    padding: 0;
+                }
+            }
+        }
+    }  
     .section__principal {
         display: flex;
         flex-direction: row;
@@ -91,4 +102,19 @@ body{
 }
 .body__portfolio{
     background: url(../img/codigo.jpg);
+}
+
+@media (max-width: 950px){
+    body{
+        .section__principal{
+            display: flex;
+            flex-direction: column;
+            .section__divLeft{
+                align-self: center;
+            }
+            .section__divRight{
+                align-self: center;
+            }
+        }
+    }          
 }
