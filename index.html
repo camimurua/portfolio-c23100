@@ -14,15 +14,20 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- ANIMACIONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- CSS propio -->
     <link rel="stylesheet" href="css/estilo.css">
     
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header> 
         <nav>
           <div class="nav-wrapper">
-            <a href="#" class="logo">Camila Murua</a>
+            <a href="index.html" class="logo">Camila Murua</a>
             <ul id="nav-mobile" class="right">
               <li><a href="index.html">Inicio</a></li>
               <li><a href="resumen.html">Sobre Mí</a></li>
@@ -34,7 +39,7 @@
     </header>
 
     <section class="section__principal">
-      <div class="section__divLeft">
+      <div class="section__divLeft animate__animated animate__fadeInLeft">
         <div class="section__divLeft_titulo">
           <h1> Desarrolladora Web </h1>
         </div>
@@ -51,13 +56,20 @@
           <a href="contacto.html" class="btn btn-info">Contacto</a>
         </div>
       </div>
-      <div class="section__divRight">
+      <div class="section__divRight animate__animated animate__fadeInRight">
         <img src="img/monitor-web.png">
       </div>
     </section>
     
-    <footer>
-
+    <footer class="footer text-faded text-center">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; 2021 Camila Murua</p>
+        <div class="footer__container_i">
+          <i class="far fa-envelope"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
     </footer>
 
     <!-- scripts -->

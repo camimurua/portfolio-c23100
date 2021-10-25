@@ -12,14 +12,20 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- ANIMACIONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- CSS propio -->
     <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header> 
         <nav>
           <div class="nav-wrapper">
-            <a href="#" class="logo">Camila Murua</a>
+            <a href="index.html" class="logo">Camila Murua</a>
             <ul id="nav-mobile" class="right">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="resumen.html">Sobre Mí</a></li>
@@ -31,6 +37,9 @@
     </header>
 
     <section class="section__resumen">
+        <div class="section__resumen_img animate__animated animate__pulse">
+            <img src="img/imagen-sobremi.jpg">
+        </div>
         <div class="section__divResumen">
             <div class="section__divResumen_segundo">
                 <div class="section__divResumen_tercero">
@@ -46,6 +55,17 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer text-faded text-center">
+        <div class="container">
+          <p class="m-0 small">Copyright &copy; 2021 Camila Murua</p>
+          <div class="footer__container_i">
+            <i class="far fa-envelope"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+      </footer>
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

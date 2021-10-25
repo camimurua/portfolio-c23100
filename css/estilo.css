@@ -4,6 +4,8 @@ body {
     color: #fff;
     font-size: 2.1rem;
     padding: 0; }
+  body header nav .nav-wrapper li a:hover {
+    color: black; }
   body .section__principal {
     display: flex;
     flex-direction: row;
@@ -25,8 +27,12 @@ body {
     body .section__principal .section__divRight {
       margin-top: 5%; }
   body .section__resumen {
-    display: flex;
-    flex-direction: row-reverse; }
+    display: flex; }
+    body .section__resumen .section__resumen_img {
+      align-self: center; }
+      body .section__resumen .section__resumen_img img {
+        width: 80%;
+        border-radius: 6px; }
     body .section__resumen .section__divResumen {
       background-color: #FF5C58;
       width: 60%;
@@ -50,13 +56,24 @@ body {
             line-height: 1.8em;
             text-align: justify;
             font-size: 1.1em; }
-  body .section__portfolio .section__portfolio_cuerpo {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-left: 5%; }
-    body .section__portfolio .section__portfolio_cuerpo .section__portfolio_titulo {
-      font-size: 2.4em; }
+  body .section__portfolio {
+    display: flex; }
+    body .section__portfolio .section__portfolio_cuerpo {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding-left: 5%;
+      width: 50%; }
+      body .section__portfolio .section__portfolio_cuerpo .section__portfolio_titulo {
+        font-size: 2.4em; }
+    body .section__portfolio .section__portfolio_img {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 10%; }
+      body .section__portfolio .section__portfolio_img img {
+        width: 250px; }
   body .section__contacto {
     display: flex;
     flex-direction: row; }
@@ -72,6 +89,15 @@ body {
       body .section__contacto .section__contacto_form .form-label {
         color: black;
         font-family: "Montserrat", sans-serif; }
+  body footer {
+    padding: 1%; }
+    body footer .container {
+      display: flex;
+      justify-content: space-between; }
+      body footer .container .footer__container_i {
+        width: 30%; }
+        body footer .container .footer__container_i i {
+          padding-left: 2%; }
 
 .body__portfolio {
   background: url(../img/codigo.jpg); }
@@ -84,3 +110,9 @@ body {
       align-self: center; }
     body .section__principal .section__divRight {
       align-self: center; } }
+
+@media (max-width: 690px) {
+  .section__portfolio .section__portfolio_img {
+    visibility: hidden; }
+  .section__portfolio .section__portfolio_cuerpo {
+    width: 100%; } }
